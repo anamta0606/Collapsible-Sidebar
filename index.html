@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link-text">My Dashboard</span>
+        </div>
+
+        <nav>
+            <a href="#" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span class="link-text">Home</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-box"></i>
+                <span class="link-text">Products</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-chart-column"></i>
+                <span class="link-text">Analytics</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-gear"></i>
+                <span class="link-text">Settings</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                <span class="link-text">Profile</span>
+            </a>
+        </nav>
+
+        <button class="toggle-btn" id="toggleBtn">
+            <i class="fa-solid fa-angles-left"></i>
+            <span class="link-text">Collapse</span>
+        </button>
+    </aside>
+
+    <main class="main-content">
+        <button class="mobile-menu" id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    <section id="pageContent">
+        <h1>Dashboard</h1>
+        <p class="welcome">Welcome to your dashboard!</p>
+
+        <section class="welcome-card">
+            <h2>Hello, User!</h2>
+            <p>Select an option from the sidebar to get started.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <i class="fa-solid fa-box"></i>
+                <h3>Products</h3>
+                <p>Manage your products here.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-column"></i>
+                <h3>Analytics</h3>
+                <p>View your dashboard statistics.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Settings</h3>
+                <p>Customize your preferences.</p>
+            </div>
+        </section>
+    </section>
+</main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
